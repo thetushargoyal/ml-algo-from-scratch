@@ -38,7 +38,7 @@ class LinearRegression:
     
 if __name__ == "__main__":
     
-    regressor = LinearRegression(lr=0.01, n_iters=1000)
+    regressor = LinearRegression(lr=0.001, n_iters=10000)
     X, y = datasets.make_regression(n_samples=100, n_features=1, noise=20, random_state=4)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
 
